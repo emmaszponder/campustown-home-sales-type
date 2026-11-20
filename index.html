@@ -1,10 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Campus Communities</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #13294B, #1E4D8F);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #13294B;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat {
+            background: #eef4ff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 2rem;
+            color: #13294B;
+        }
+
+        .highlight {
+            background: #fff8e7;
+            border-left: 6px solid #f4b400;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        footer {
+            background: #13294B;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+<header>
     <h1>Dream Campus Communities</h1>
-    <p>If you can see this, GitHub Pages is working.</p>
+
+    <p>
+        Exploring which college towns offer the best combination of
+        affordability, home size, community resources, and access to major
+        universities.
+    </p>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Research Question</h2>
+
+        <p>
+            Which college towns provide the strongest balance of affordability,
+            housing space, and proximity to educational opportunity?
+        </p>
+
+        <br>
+
+        <p>
+            Universities are often economic and cultural centers for their
+            communities. This project explores housing markets near major
+            universities and asks whether some college towns offer greater value
+            than others.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>About the Dataset</h2>
+
+        <p>
+            The College-Town Home Sales Dataset contains residential real estate
+            transactions from communities located near major university campuses
+            across the United States.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>35,442</h3>
+                <p>Home Sales</p>
+            </div>
+
+            <div class="stat">
+                <h3>18</h3>
+                <p>Cities & Towns</p>
+            </div>
+
+            <div class="stat">
+                <h3>11</h3>
+                <p>States</p>
+            </div>
+
+            <div class="stat">
+                <h3>11</h3>
+                <p>Universities</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card highlight">
+        <h2>Variables Used</h2>
+
+        <p>
+            This project focuses on factors that influence housing value
+            near major universities.
+        </p>
+
+        <ul>
+            <li>Sale Price</li>
+            <li>Bedrooms</li>
+            <li>Bathrooms</li>
+            <li>Living Area (Square Feet)</li>
+            <li>Distance to Campus</li>
+            <li>University</li>
+            <li>City and State</li>
+            <li>Year Built</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Sales under $10,000 are excluded from analysis to remove
+            unusual transactions and outliers.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Why This Matters</h2>
+
+        <p>
+            Housing affordability affects students, university employees,
+            families, and long-term residents. Some college towns offer
+            larger homes and lower costs, while others require significantly
+            higher housing investments.
+        </p>
+
+        <br>
+
+        <p>
+            By comparing communities surrounding major universities,
+            this project seeks to identify locations that provide the best
+            overall housing value.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Planned Analyses</h2>
+
+        <ul>
+            <li>Compare affordability across university communities.</li>
+            <li>Examine average and median home sale prices.</li>
+            <li>Measure housing value using square footage and price.</li>
+            <li>Explore the relationship between sale price and distance from campus.</li>
+            <li>Identify communities that offer the most space for the money.</li>
+            <li>Develop rankings of Dream Campus Communities.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Future Development</h2>
+
+        <p>
+            Future versions of this project will include charts,
+            rankings, interactive visualizations, and comparisons
+            between university communities to help identify the best
+            places to live near higher-education institutions.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    Data Source: College-Town Home Sales Dataset (Version 1.0, 2026)
+</footer>
+
 </body>
 </html>
