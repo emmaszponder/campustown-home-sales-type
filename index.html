@@ -3,149 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>College Town Home Sales Dashboard</title>
+<title>Dream Campus Communities</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #f4f6f9;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f7fa;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #13294B;
+    background: linear-gradient(135deg, #13294B, #1e4d8f);
     color: white;
-    padding: 2rem;
     text-align: center;
+    padding: 4rem 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
 h2 {
     color: #13294B;
+    margin-bottom: 1rem;
 }
 
 .stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-.stat-box {
-    background: #e8f0ff;
-    padding: 15px;
-    border-radius: 8px;
+.stat {
+    background-color: #eef4ff;
+    border-radius: 10px;
+    padding: 1.5rem;
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
+.stat h3 {
+    color: #13294B;
+    font-size: 2rem;
 }
-</style>
-</head>
 
-<body>
+.highlight {
+    background: #fff8e7;
+    border-left: 5px solid #f4b400;
+}
 
-<header>
-    <h1>College Town Home Sales Dashboard</h1>
-    <p>Exploring 35,442 home sales near 11 university campuses across 11 states.</p>
-</header>
+ul {
+    padding-left: 1.5rem;
+}
 
-<div class="container">
-
-<div class="card">
-    <h2>About the Dataset</h2>
-    <p>
-        This project uses the College Town Home Sales dataset containing residential
-        property sales from communities surrounding major universities.
-        The dataset includes location information, housing characteristics,
-        sale prices, and property attributes.
-    </p>
-
-    <p>
-        Variables include city, state, university, sale price,
-        home size, bedrooms, bathrooms, year built, and sale date.
-    </p>
-
-    <p>
-        <strong>Analysis Rule:</strong> Sales below $10,000 are excluded from analysis.
-    </p>
-</div>
-
-<div class="card">
-    <h2>Dataset Highlights</h2>
-
-    <div class="stats">
-        <div class="stat-box">
-            <h3>35,442</h3>
-            <p>Total Sales Records</p>
-        </div>
-
-        <div class="stat-box">
-            <h3>18</h3>
-            <p>Cities & Towns</p>
-        </div>
-
-        <div class="stat-box">
-            <h3>11</h3>
-            <p>States</p>
-        </div>
-
-        <div class="stat-box">
-            <h3>11</h3>
-            <p>Universities</p>
-        </div>
-    </div>
-</div>
-
-<div class="card">
-    <h2>Research Questions</h2>
-
-    <ul>
-        <li>Which college towns have the highest home sale prices?</li>
-        <li>How do housing markets differ across states?</li>
-        <li>Do homes near certain universities command higher prices?</li>
-        <li>How do home characteristics affect selling price?</li>
-        <li>What trends appear across college-town housing markets?</li>
-    </ul>
-</div>
-
-<div class="card">
-    <h2>Future Dashboard Development</h2>
-
-    <p>
-        In future project phases, this dashboard will include:
-    </p>
-
-    <ul>
-        <li>Interactive visualizations</li>
-        <li>City-level price comparisons</li>
-        <li>Housing market trend analysis</li>
-        <li>Price distributions by university</li>
-        <li>Filters and data exploration tools</li>
-    </ul>
-</div>
-
-</div>
-
-<footer>
-    College Town Home Sales Project | University of Illinois
-</footer>
-
-</body>
-</html>
